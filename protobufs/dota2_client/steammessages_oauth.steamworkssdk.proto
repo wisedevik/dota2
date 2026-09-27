@@ -1,0 +1,18 @@
+// Reconstructed from libserver.dylib (Dota 2, osx64).
+// Source file: steammessages_oauth.steamworkssdk.proto
+syntax = "proto2";
+
+import "steammessages_unified_base.steamworkssdk.proto";
+
+message COAuthToken_ImplicitGrantNoPrompt_Request {
+  optional string clientid = 1;
+}
+
+message COAuthToken_ImplicitGrantNoPrompt_Response {
+  optional string access_token = 1;
+  optional string redirect_uri = 2;
+}
+
+service OAuthToken {
+  rpc ImplicitGrantNoPrompt (.COAuthToken_ImplicitGrantNoPrompt_Request) returns (.COAuthToken_ImplicitGrantNoPrompt_Response);
+}

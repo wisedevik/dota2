@@ -1,0 +1,18 @@
+# build
+build/
+compile_commands.json
+
+# the game client is Valve's and is downloaded, see devtools/fetch_client.sh
+client/
+
+# local tools
+devtools/venv/
+devtools/depotdownloader/
+
+# raw descriptor dumps
+protobufs/*/raw/
+
+# editors / os
+.DS_Store
+.vscode/
+.idea/

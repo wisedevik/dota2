@@ -1,0 +1,12 @@
+# clangd: includes are rooted at src/ and src/public/ (Valve-style), plus the
+# protobuf code CMake generates into build/protobufs.
+CompileFlags:
+  CompilationDatabase: build
+  Add:
+    - -std=c++17
+    - -Isrc
+    - -Isrc/public
+    - -Ibuild/protobufs
+    - -I/opt/homebrew/include
+  Remove:
+    - -W*
